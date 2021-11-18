@@ -555,7 +555,7 @@ margin-bottom: -30px;
         }
         .text-1 {
             font-family: Josefin-Sans;
-            font-size: 23px;
+            font-size: 22px;
             text-align: center;
         }
         .info-text {
@@ -689,14 +689,15 @@ font-family: Josefin-Sans;
         color: white;
         font-family: Josefin-Sans;
         margin-top: 65%;
-        font-size: 33px;
+        font-size: 48px;
+        text-align: center;
     }
-
     .top-subtitle {
         text-align: center;
         color: white;
         font-family: Josefin-Sans;
-        font-size: 22px;
+        font-size: 26px;
+        line-height: 1.25;
     }
     .relax-title {
         font-family: Josefin-Sans;
