@@ -1,0 +1,99 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="form.css" type="text/css">
+</head>
+<body>
+    
+
+    <div class="container">  
+        <form id="contact" action="" method="post">
+          <h3>Submit your Application</h3>
+          <h4>Contact us for custom quote</h4>
+          <fieldset>
+            <input placeholder="Your name" name="Name" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Email Address" name="Email" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Phone Number" name="Mobile" type="tel" tabindex="3" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Web Site " type="url" tabindex="4" required>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Your Location " name="Location" type="text" tabindex="4" required>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+          </fieldset>
+        
+        </form>
+      </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <script>
+         $("#contact").validate({
+            rules: {
+                Name: {
+                    required: true,
+                    minlength: 4,
+                    maxlength: 15,
+                },
+                Email: {
+                    required: true,
+                    email: true,
+                },
+                Mobile: {
+                    required: true,
+                    
+                    maxlength: 10, 
+                },
+                Location:{
+                    required: true,
+                }
+
+
+
+
+            },
+            submitHandler: (form, e) => {
+                console.log("hellllllllllllllllllll")
+                e.preventDefault();
+                $.ajax({
+                    url: "https://script.google.com/macros/s/AKfycbz0xKOdQvJ-J0zCEX-rzdBRx05gj_WOoRLtwjXjy1mYGN0LjXr-LHyfFA/exec",
+                    data: $('form').serialize(),
+                    method: "POST",
+                    success: function (response) {
+                        alert("Form submitted successfully")
+                        window.location.reload()
+                        // window.location.href="https://google.com"
+                    },
+                    error: function (err) {
+                        alert("Something Error")
+
+                    }
+                })
+
+            }
+
+
+        });
+    </script>
+</body>
+</html>
