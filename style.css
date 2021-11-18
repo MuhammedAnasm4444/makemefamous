@@ -31,7 +31,9 @@ html,body{
     align-items: center;
     position: relative;
 }
-
+andpresent {
+    font-size: 28px;
+}
 #cover-caption {
     width: 100%;
     position: relative;
@@ -680,6 +682,8 @@ font-family: Josefin-Sans;
 .footer-title {
     font-family: Billabong;
     font-size: 18px;
+} .andpresent {
+    font-size: 22px;
 }
     }
 @media screen and  (min-width:350px) { /* smartphones, iPhone, portrait 480x320 phones */
@@ -698,6 +702,9 @@ font-family: Josefin-Sans;
         font-family: Josefin-Sans;
         font-size: 22px;
         line-height: 1.25;
+    }
+    .andpresent {
+        font-size: 22px;
     }
     .relax-title {
         font-family: Josefin-Sans;
@@ -767,12 +774,15 @@ font-family: Josefin-Sans;
         color: white;
         font-family: Josefin-Sans;
         margin-top: 83%;
-        font-size: 33px;
+        font-size: 334px;
     }
     .top-subtitle {
         text-align: center;
         color: white;
         font-family: Josefin-Sans;
+        font-size: 22px;
+    }
+    .andpresent {
         font-size: 22px;
     }
 
@@ -941,6 +951,9 @@ font-family: Josefin-Sans;
         font-family: Josefin-Sans;
         font-size: 24px;
     }
+    andpresent {
+        font-size: 28px;
+    }
 
     .text-1 {
         font-family: Josefin-Sans;
@@ -1007,6 +1020,9 @@ font-size: 60px;
         color: white;
         font-family: Josefin-Sans;
         font-size: 25px;
+    }
+    andpresent {
+        font-size: 28px;
     }
     /* top section end */
 /* monkey and relax div  */
@@ -1112,6 +1128,9 @@ font-size: 60px;
         font-family: Billabong;
         color: white;
         font-size: 30px;
+    }
+    andpresent {
+        font-size: 28px;
     }
     
 }
