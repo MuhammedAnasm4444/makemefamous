@@ -501,7 +501,7 @@ margin-bottom: -30px;
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 /* @media only screen and (min-width: 1200px) { */
 
-    @media (max-width: 30em) {
+    @media (max-width: 40em) {
         .cloud {
           display: -webkit-box;
           display: -moz-box;
@@ -706,7 +706,7 @@ font-family: Josefin-Sans;
     .price-card {
         border-radius: 44px;
         border-style: solid;
-        width:340px;
+        width: 100%;
         border: gray;
         background: #FBFBFB;
         border: gray;
@@ -892,7 +892,40 @@ font-family: Josefin-Sans;
         margin-bottom: 53px;
     }
 }
-@media screen and (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media screen and (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+    .top-heading {
+        /* position: absolute; */
+        color: white;
+        font-family: Josefin-Sans;
+        margin-top: 100%;
+        font-size: 33px;
+    }
+    .nav-title {
+        font-family: Billabong;
+        color: white;
+        font-size: 27px;
+    }
+    .price-card-bottom-text {
+        font-family: Josefin-Sans;
+        color: #787878;
+        font-size: 20px;
+    }
+
+.total-amount {
+    font-family: Josefin-Sans;
+    font-size: 22px;
+}
+    .sum {
+        font-size: 21px;
+    }
+    .toc-add {
+        font-size: 17px;
+    }
+    .footer-title {
+        font-family: Billabong;
+        font-size: 25px;
+    } 
+}
 @media screen and (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
     .top-heading {
         /* position: absolute; */
