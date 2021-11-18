@@ -3,19 +3,19 @@ html,body{
 }
 @font-face {
     font-family: Josefin-Sans;
-    src: url(/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+    src: url(./Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
 }
 @font-face {
     font-family: Comic-Nue;
-    src: url(/Comic-Nue/ComicNeue-Regular.ttf);
+    src: url(./Comic-Nue/ComicNeue-Regular.ttf);
 }
 @font-face {
     font-family: Comic-Nue-bold;
-    src: url(/Comic-Nue/ComicNeue-Bold.ttf);
+    src: url(./Comic-Nue/ComicNeue-Bold.ttf);
 }
 @font-face {
     font-family: Billabong;
-    src: url(/BillaBong/GrandHotel-Regular.ttf);
+    src: url(./BillaBong/GrandHotel-Regular.ttf);
 }
 /* ul {
     list-style-image: url('/images/list_Icon.png');
@@ -85,7 +85,7 @@ form:before {
 }
 
 .landing-div {
-    background: url("/images/31850.jpg") fixed;
+    background: url("./images/31850.jpg") fixed;
     background-color: #5C5C5C;
     background-repeat:no-repeat;
     background-size:cover;
@@ -588,6 +588,7 @@ margin-bottom: -30px;
         font-family: Josefin-Sans;
         font-size: 22px;
     }
+
     .price-card {
         border-radius: 44px;
         border-style: solid;
@@ -609,9 +610,20 @@ margin-bottom: -30px;
         font-size: 30px;
         text-align: center;
     }
+    .info {
+        padding: 35px;
+
+    }
     .info-text {
         font-family: Josefin-Sans;
         font-size: 28px;
+    }
+    .relax-sent-div {
+        padding-right: 15px;
+    padding-left: 15px;
+    }
+    .pay-later-div {
+        padding: 35px;
     }
     .pl-title {
         font-family: Josefin-Sans;
