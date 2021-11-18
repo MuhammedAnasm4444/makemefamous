@@ -1,5 +1,6 @@
 html,body{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 @font-face {
     font-family: Josefin-Sans;
@@ -77,6 +78,7 @@ form:before {
 .myNav {
     position: fixed;
     top: 0;
+    background: rgb(0,0,0, 0.2);
     /* background: black;
     opacity: 5%; */
     width: 100%;
@@ -131,6 +133,10 @@ form:before {
     font-family:Comic-Nue;
     font-size: 47px;
 }
+.total-amount {
+    font-family: Josefin-Sans;
+    font-size: 32px;
+}
 .apply-text {
     font-family:Comic-Nue;
     font-size: 47px;
@@ -156,6 +162,9 @@ form:before {
 .difference-text {
     font-family: Comic-Nue-bold;
     font-size: 49px;
+}
+.sum {
+    font-size: 25px;
 }
 
 .relax-div {
@@ -188,6 +197,7 @@ background: black;
     text-align: center;
 }
 .pl-subtitle {
+    font-family: Josefin-Sans;
     text-align: center;
     font-size: 40px;
 }
@@ -527,12 +537,158 @@ margin-bottom: -30px;
           order: 1;
         }
       }
-@media only screen and  (max-width:360px) { /* smartphones, iPhone, portrait 480x320 phones */
+
+    @media screen and (min-width:300px) {
+        
+        .top-heading {
+            /* position: absolute; */
+            color: white;
+            font-family: Josefin-Sans;
+            margin-top: 60%;
+            font-size: 28px;
+        }
+        .top-subtitle {
+            text-align: center;
+            color: white;
+            font-family: Josefin-Sans;
+            font-size: 19px;
+        }
+        .text-1 {
+            font-family: Josefin-Sans;
+            font-size: 23px;
+            text-align: center;
+        }
+        .info-text {
+            font-family: Josefin-Sans;
+            font-size: 17px;
+        }
+        .relax-title {
+            font-family: Josefin-Sans;
+            font-size: 45px;
+            color: white;
+        }
+        .relax-subtitle {
+            font-family: Josefin-Sans;
+            font-size: 20px;
+            text-align: center;
+            color: white;
+        }
+        .relax-sentence {
+            text-align: center;
+            font-family: Josefin-Sans;
+            font-size: 13px;
+            color: white;
+        }
+        .pl-title {
+            font-family: Josefin-Sans;
+            font-size: 26px;
+            text-align: center;
+        }
+        .pl-subtitle {
+            font-family: Josefin-Sans;
+            text-align: center;
+            font-size: 16px;
+        }
+        .price-card {
+            border-radius: 44px;
+            border-style: solid;
+            width:288px;
+            border: gray;
+            background: #FBFBFB;
+            border: gray;
+        
+        }
+        .price-card-title {
+            font-family: Josefin-Sans;
+            text-align: center;
+            font-size: 18px;
+        }
+        
+        
+        
+        .list-items p {
+            font-family: Josefin-Sans;
+            font-size: 15px;
+        } 
+        .additional-row {
+            margin-bottom: 53px;
+        }
+        .price-card-bottom-text {
+            font-family: Josefin-Sans;
+            color: #787878;
+            font-size:17px;
+        }
+        .nav-title {
+            font-family: Billabong;
+            color: white;
+            font-size: 20px;
+        }
+        .toc {
+            font-size: 14px;
+            text-align: left;
+        }
+        .toc-add {
+            font-size: 14px;
+        }
+        .sum{
+            font-size: 14px;
+        }
+        .total-amount {
+            font-family: Josefin-Sans;
+            font-size: 16px;
+        }
+
+.isa-card {
+    border-radius: 44px;
+    border-style: solid;
+    width: 100%;
+    border: gray;
+    background: white;
+    border: gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+
+
+}
+.isa-card-bottom {
+    background: black;
+    border-radius: 0px 0px 044px 44px;
+}
+.isa-card-bottom-text {
+font-family: Josefin-Sans;
+    color: white;
+    font-size: 24px;
+}
+.note-text {
+    font-family: Josefin-Sans;
+    font-size: 12px;
+}
+.isa-card-bottom-text {
+    font-family: Josefin-Sans;
+    color: white;
+    font-size: 20px;
+}
+.d-title {
+    font-family: Josefin-Sans;
+    font-size: 27px;
+    color: white;
+    text-align: center;
+}
+.before-text {
+    font-family: Josefin-Sans;
+    font-size: 28px;
+}
+.footer-title {
+    font-family: Billabong;
+    font-size: 18px;
+}
+    }
+@media screen and  (min-width:350px) { /* smartphones, iPhone, portrait 480x320 phones */
+   
     .top-heading {
         /* position: absolute; */
         color: white;
         font-family: Josefin-Sans;
-        margin-top: 83%;
+        margin-top: 65%;
         font-size: 33px;
     }
 
@@ -544,7 +700,7 @@ margin-bottom: -30px;
     }
     .relax-title {
         font-family: Josefin-Sans;
-        font-size:65px;
+        font-size: 56px;
         color: white;
     }
     .price-card {
@@ -569,9 +725,39 @@ margin-bottom: -30px;
      } .additional-row {
         margin-bottom: 53px;
     }
+    .price-card-bottom-text {
+        font-family: Josefin-Sans;
+        color: #787878;
+        font-size: 20px;
+    }
+
+.isa-card {
+    border-radius: 44px;
+    border-style: solid;
+    width: 100%;
+    border: gray;
+    background: white;
+    border: gray;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+
+
+}
+.isa-card-bottom {
+    background: black;
+    border-radius: 0px 0px 044px 44px;
+}
+.isa-card-bottom-text {
+font-family: Josefin-Sans;
+    color: white;
+    font-size: 24px;
+}
+.total-amount {
+    font-family: Josefin-Sans;
+    font-size: 20px;
+}
 
     }
-@media screen and (max-width:481px)  { 
+@media screen and (min-width:481px)  { 
     
     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 
@@ -631,6 +817,7 @@ margin-bottom: -30px;
         text-align: center;
     }
     .pl-subtitle {
+        font-family: Josefin-Sans;
         text-align: center;
         font-size: 25px;
     }
@@ -643,10 +830,18 @@ margin-bottom: -30px;
         font-size:80px;
         color: white;
     }
+    .total-amount {
+        font-family: Josefin-Sans;
+        font-size: 19px;
+    }
      .price-card-bottom-text {
         font-family: Josefin-Sans;
         color: #787878;
         font-size: 22px;
+    }
+    .toc {
+        font-size: 20px;
+        text-align: left;
     }
 
 .isa-card {
@@ -746,8 +941,9 @@ font-family: Josefin-Sans;
         text-align: center;
     }
     .pl-subtitle {
+        font-family: Josefin-Sans;
         text-align: center;
-        font-size: 31px;
+        font-size: 22px;
     }
     .d-title {
         font-family: Josefin-Sans;
@@ -789,6 +985,9 @@ font-size: 58px;
             font-family: Josefin-Sans;
             font-size: 35px;
             }
+            .sum {
+                font-size: 20px;
+            }
   .relax-title {
                 font-family: Josefin-Sans;
                 font-size: 140px;
@@ -813,8 +1012,13 @@ font-size: 58px;
         text-align: center;
         }
         .pl-subtitle {
+            font-family: Josefin-Sans;
             text-align: center;
             font-size: 36px;
+            }
+            .total-amount {
+                font-family: Josefin-Sans;
+                font-size: 25px;
             }
       .price-card {
                 position: relative;
@@ -848,14 +1052,32 @@ font-size: 58px;
                         /* before after div */
    .d-title {
         font-family: Josefin-Sans;
-    font-size: 56px;
+    font-size: 50px;
      color: white;
      text-align: center;
                 }
-
+                .nav-title {
+                    font-family: Billabong;
+                    color: white;
+                    font-size: 30px;
+                }
                 .before-text {
                     font-family: Josefin-Sans;
                     font-size: 32px;
                     }
+                    .relax-div {
+                        height: 100vh;
+                    }
+                    .footer-title {
+                        font-family: Billabong;
+                        font-size: 35px;
+                    }
  }
-@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ 
+    .nav-title {
+        font-family: Billabong;
+        color: white;
+        font-size: 30px;
+    }
+    
+}

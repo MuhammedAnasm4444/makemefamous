@@ -27,13 +27,10 @@
             <input placeholder="Your Phone Number" name="Mobile" type="tel" tabindex="3" required>
           </fieldset>
           <fieldset>
-            <input placeholder="Your Web Site " type="url" tabindex="4" required>
-          </fieldset>
-          <fieldset>
             <input placeholder="Your Location " name="Location" type="text" tabindex="4" required>
           </fieldset>
           <fieldset>
-            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            <button  type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
           </fieldset>
         
         </form>
@@ -76,7 +73,7 @@
                 console.log("hellllllllllllllllllll")
                 e.preventDefault();
                 $.ajax({
-                    url: "https://script.google.com/macros/s/AKfycbz0xKOdQvJ-J0zCEX-rzdBRx05gj_WOoRLtwjXjy1mYGN0LjXr-LHyfFA/exec",
+                    url: "https://script.google.com/a/stargram.in/macros/s/AKfycbzX87DxBfdXbFbzwx1d0wQHRyeP0-WNJUE7QSBB/exec",
                     data: $('form').serialize(),
                     method: "POST",
                     success: function (response) {
