@@ -560,7 +560,7 @@ margin-bottom: -30px;
         }
         .info-text {
             font-family: Josefin-Sans;
-            font-size: 17px;
+            font-size: 18px;
         }
         .relax-title {
             font-family: Josefin-Sans;
@@ -688,15 +688,15 @@ font-family: Josefin-Sans;
         /* position: absolute; */
         color: white;
         font-family: Josefin-Sans;
-        margin-top: 65%;
-        font-size: 48px;
+        margin-top: 82%;
+        font-size: 40px;
         text-align: center;
     }
     .top-subtitle {
         text-align: center;
         color: white;
         font-family: Josefin-Sans;
-        font-size: 26px;
+        font-size: 22px;
         line-height: 1.25;
     }
     .relax-title {
@@ -1000,7 +1000,7 @@ font-family: Josefin-Sans;
         color: white;
 font-family: Josefin-Sans;
 margin-top: 50%;
-font-size: 58px;
+font-size: 60px;
     }
     .top-subtitle {
         text-align: center;
