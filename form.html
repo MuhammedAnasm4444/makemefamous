@@ -35,6 +35,29 @@
         
         </form>
       </div>
+      <div class="modal fade" id="ignismyModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label=""><span>×</span></button> -->
+                    <button type="button" class="btn " onclick="closeCol()" aria-label=""><span>×</span></button>
+                 </div>
+                
+                <div class="modal-body">
+                   
+                    <div class="thank-you-pop">
+                        <img src="http://goactionstations.co.uk/wp-content/uploads/2017/03/Green-Round-Tick.png" alt="">
+                        <h1>Thank You!</h1>
+                        <p>Your submission is received and we will contact you soon</p>
+                        <!-- <h3 class="cupon-pop">Your Id: <span>12345</span></h3> -->
+                        
+                     </div>
+                     
+                </div>
+                
+            </div>
+        </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
@@ -44,6 +67,12 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <script>
+        function closeCol () {
+            $('#ignismyModal').collapse('hide')
+            window.location.href="./index.html"
+        }
+    </script>
     <script>
          $("#contact").validate({
             rules: {
@@ -72,13 +101,16 @@
             submitHandler: (form, e) => {
                 console.log("hellllllllllllllllllll")
                 e.preventDefault();
+                document.getElementById("contact-submit").innerHTML= "loading";
                 $.ajax({
                     url: "https://script.google.com/a/stargram.in/macros/s/AKfycbzX87DxBfdXbFbzwx1d0wQHRyeP0-WNJUE7QSBB/exec",
                     data: $('form').serialize(),
                     method: "POST",
                     success: function (response) {
-                        alert("Form submitted successfully")
-                        window.location.reload()
+                        document.getElementById("contact-submit").innerHTML= "Submit";
+                        $('#ignismyModal').collapse()
+                        // alert("Form submitted successfully")
+                        
                         // window.location.href="https://google.com"
                     },
                     error: function (err) {
