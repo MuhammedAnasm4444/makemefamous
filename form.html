@@ -33,6 +33,14 @@
             <input placeholder="Pincode " name="Pincode" type="text" tabindex="4" required>
           </fieldset>
           <fieldset>
+          <div class="form-check">
+            <input class="form-check-input" name= "Terms" type="checkbox" value="" id="flexCheckDefault" style="margin-top: 0.5rem;">
+            <label class="form-check-label" for="flexCheckDefault">
+              Terms and Conditions Apply
+            </label>
+          </div>
+        </fieldset>
+          <fieldset>
             <button  type="submit" id="contact-submit" data-submit="...Sending">Apply Now</button>
           </fieldset>
         
@@ -96,10 +104,18 @@
                 Location:{
                     required: true,
                 }
+                ,
+                Terms:{
+                    required:true,
+                    maxlength:2
+                }
 
 
 
 
+            },
+            messages:{
+                Terms:"please accept terms and conditions to apply"
             },
             submitHandler: (form, e) => {
                 console.log("hellllllllllllllllllll")

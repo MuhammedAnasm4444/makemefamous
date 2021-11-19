@@ -89,7 +89,7 @@ form:before {
 }
 
 .landing-div {
-    background: url("./images/31850.jpg") fixed;
+    background: linear-gradient(to bottom, rgb(54 60 92 / 52%), rgb(0 0 0 / 10%)), url("./images/31850.jpg") fixed;
     background-color: #5C5C5C;
     background-repeat:no-repeat;
     background-size:cover;
