@@ -89,9 +89,9 @@ form:before {
 }
 
 .landing-div {
-    background: linear-gradient(to bottom, rgb(54 60 92 / 52%), rgb(0 0 0 / 10%)), url("./images/ll.jpg");
-    /* background-color: #5C5C5C; */
-    scroll-behavior: smooth;
+    /* background: linear-gradient(to bottom, rgb(54 60 92 / 52%), rgb(0 0 0 / 10%)), url("./images/ll.jpg") fixed; */
+    background-color: #5C5C5C;
+    
     background-repeat:no-repeat;
     background-size:cover;
     background-position: center ;
