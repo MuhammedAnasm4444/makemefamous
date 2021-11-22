@@ -471,14 +471,14 @@ We do this so that everyone gets an opportunity to tryout and see whether conten
         var faqSection =  true
    $(document).scroll(function () {
         $('section').each(function () {
-            
             if($(this).position().top <= $(document).scrollTop() && ($(this).position().top + $(this).outerHeight()) > $(document).scrollTop()) {
                 console.log("this section is"+$(this).attr('id'));
                 if(info && ($(this).attr('id') === "info-section"))  {
-                    info = false
-                 mixpanel.track('MakeMeFamous', {
+                info = false
+                mixpanel.track('MakeMeFamous', {
             'source': "Info Section",
-        }); }
+        }); 
+    }
         else if (relax &&  $(this).attr('id') === "relaxDiv") {
             relax = false
                  mixpanel.track('MakeMeFamous', {
