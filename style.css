@@ -93,7 +93,7 @@ form:before {
     background-color: #5C5C5C;
     scroll-behavior: smooth;
     background-repeat:no-repeat;
-    background-size:cover;
+    background-size:cover !important;
     background-position: center !important;
     margin-top: -30px;
     /* box-shadow: 5px 100px 20px black inset; */
